@@ -2,13 +2,13 @@ import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
-const DesktopScreen = ({ 
+const DesktopScreen = ({
   dropdownRef,
   toggleDropdown,
   isDropdownOpen,
   setIsDropdownOpen,
 }) => {
-      const location = useLocation();
+  const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
 
@@ -17,7 +17,9 @@ const DesktopScreen = ({
       <Link
         to="/"
         className={`text-sm font-medium px-3 py-2 rounded-md ${
-          isActive("/") ? "text-green-500" : "text-gray-900 hover:text-indigo-600"
+          isActive("/")
+           ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
         }`}
       >
         Home
@@ -27,16 +29,16 @@ const DesktopScreen = ({
         to="/aboutUs"
         className={`text-sm font-medium px-3 py-2 rounded-md ${
           isActive("/aboutUs")
-            ? "text-green-500"
-            : "text-gray-900 hover:text-indigo-600"
+             ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
         }`}
       >
         About Us
-      </Link> 
+      </Link>
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={toggleDropdown}
-          className="flex items-center space-x-1 text-sm font-medium focus:outline-none text-gray-900 hover:text-indigo-600"
+          className="flex items-center space-x-1 text-sm font-medium focus:outline-none text-gray-900 hover:text-green-700"
         >
           <span>Our Services</span>
           <FaChevronDown className="text-xs" />
@@ -48,8 +50,8 @@ const DesktopScreen = ({
               to="/services/software-dev"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/software-dev")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+          ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -59,8 +61,8 @@ const DesktopScreen = ({
               to="/services/cyber-security"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/cyber-security")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                   ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -70,8 +72,8 @@ const DesktopScreen = ({
               to="/services/devops"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/devops")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                  ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -81,8 +83,8 @@ const DesktopScreen = ({
               to="/services/computer-training"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/computer-training")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                   ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -92,8 +94,8 @@ const DesktopScreen = ({
               to="/services/access-to-funds"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/access-to-funds")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                 ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -103,8 +105,8 @@ const DesktopScreen = ({
               to="/services/innovation-labs"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/innovation-labs")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                  ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -114,8 +116,8 @@ const DesktopScreen = ({
               to="/services/ai-training"
               className={`block px-4 py-2 text-sm ${
                 isActive("/services/ai-training")
-                  ? "text-green-500"
-                  : "text-gray-800 hover:bg-indigo-100"
+                  ? "text-green-800"
+                  : "text-gray-700 hover:text-green-700"
               }`}
               onClick={() => setIsDropdownOpen(false)}
             >
@@ -129,8 +131,8 @@ const DesktopScreen = ({
         to="/news-room"
         className={`text-sm font-medium px-3 py-2 rounded-md ${
           isActive("/news-room")
-            ? "text-green-500"
-            : "text-gray-900 hover:text-indigo-600"
+            ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
         }`}
       >
         News Room
@@ -140,8 +142,8 @@ const DesktopScreen = ({
         to="/contactUs"
         className={`text-sm font-medium px-3 py-2 rounded-md ${
           isActive("/contactUs")
-            ? "text-green-500"
-            : "text-gray-900 hover:text-indigo-600"
+            ? "text-green-800"
+            : "text-gray-700 hover:text-green-700"
         }`}
       >
         Contact Us
