@@ -40,8 +40,8 @@ const Navbar = () => {
                 alt="Renewed Hope Tech Logo"
                 className="w-12 h-10"
               />
-              <span className="text-sm font-bold text-gray-800 hidden sm:block">
-                Renewed Hope
+              <span className="text-md font-bold text-gray-800 hidden sm:block">
+                NPRGS
               </span>
             </Link>
           </div>

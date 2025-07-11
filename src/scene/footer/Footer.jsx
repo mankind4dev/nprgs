@@ -29,7 +29,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 flex-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 flex-1">
           <div className="flex flex-col">
             <h1 className="font-semibold mb-2">Training Center</h1>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-2 sm:gap-6 text-sm">
@@ -96,13 +96,13 @@ const Footer = () => {
           </div>
         </div>
       </div> 
-      <div className="border-t border-slate-300 px-6 py-3 flex flex-col sm:flex-row justify-between items-center text-sm">
-        <p className="text-center sm:text-left mb-2 sm:mb-0">
+      <div className="border-t border-slate-300 px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
+        <p className="text-center sm:text-left mb-2 sm:mb-0 text-sm">
           &copy; {new Date().getFullYear()}
-          <b className="text-green-600">RenewedHopeTech</b>. All rights
+          <b className="text-green-600"> NPRGS</b>. All rights
           reserved.
         </p>
-        <div className="flex space-x-3 items-center ">
+        <div className="flex space-x-3 items-center text-xl">
           <Link to="https://www.instagram.com/dr_abiola_arogundade?igsh=MWg1dDE0NnByZGt1Mg==">
             <IoLogoInstagram />
           </Link>

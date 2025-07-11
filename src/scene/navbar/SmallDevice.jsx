@@ -7,8 +7,6 @@ const SmallDevice = ({ isMenuOpen, toggleMenu }) => {
   const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
- 
-
 
   return (
     <>
@@ -45,9 +43,9 @@ const SmallDevice = ({ isMenuOpen, toggleMenu }) => {
               <div className="">Our Services</div>
               <p className="">
                 {open ? (
-                  <FaChevronDown className="text-xs" />
-                ) : (
                   <FaChevronUp className="text-xs" />
+                ) : (
+                  <FaChevronDown className="text-xs" />
                 )}
               </p>
             </button>
@@ -135,15 +133,15 @@ const SmallDevice = ({ isMenuOpen, toggleMenu }) => {
           </div>
 
           <Link
-            to="/mission-&-vision"
+            to="/news-room"
             onClick={toggleMenu}
             className={`block text-sm ${
-              isActive("/mission-&-vision")
+              isActive("/news-room")
                 ? "text-green-500"
                 : "text-gray-900 hover:text-indigo-600"
             }`}
           >
-            Mission & Vision
+            News Room
           </Link>
 
           <Link
@@ -159,11 +157,11 @@ const SmallDevice = ({ isMenuOpen, toggleMenu }) => {
           </Link>
 
           <Link
-            to="/subscribe"
+            to="/sign-up"
             onClick={toggleMenu}
-            className="block w-3/6 mt-2 rounded-full py-2 px-4 bg-amber-500 text-white text-center text-sm hover:bg-amber-600"
+            className="block w-3/6 mt-2 rounded-full py-2 px-4 bg-green-500 text-white text-center text-sm hover:bg-green-600"
           >
-            Subscribe
+            Register
           </Link>
         </div>
       )}

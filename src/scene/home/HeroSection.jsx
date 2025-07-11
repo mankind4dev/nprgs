@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -37,8 +38,12 @@ const HeroSection = () => {
             perferendis repellat repellendus consectetur necessitatibus quo a,
             dolorem laudantium?
           </motion.p>
-          <button className="px-6 py-2 bg-red-800 rounded-[8px] mt-2 transition hover:bg-amber-900 duration-75">
-            Apply Now
+          <button
+            
+            className="px-6 py-2 text-white bg-green-500 hover:bg-green-600 rounded-[8px] mt-2
+              transition duration-75"
+          >
+            <Link to="/sign-up" className=""> Apply Now</Link>
           </button>
         </div>
         <div className="">

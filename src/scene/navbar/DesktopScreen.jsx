@@ -126,14 +126,14 @@ const DesktopScreen = ({
       </div>
 
       <Link
-        to="/mission-&-vision"
+        to="/news-room"
         className={`text-sm font-medium px-3 py-2 rounded-md ${
-          isActive("/mission-&-vision")
+          isActive("/news-room")
             ? "text-green-500"
             : "text-gray-900 hover:text-indigo-600"
         }`}
       >
-        Mission & Vision
+        News Room
       </Link>
 
       <Link

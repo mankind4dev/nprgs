@@ -6,10 +6,10 @@ const Subscribe = () => {
     <div>
       <div className="hidden sm:flex items-center">
         <Link
-          to="/subscribe"
-          className="rounded-full py-2 px-6 bg-amber-500 hover:bg-amber-600 transition"
+          to="/sign-up"
+          className="rounded-full py-2 px-6 bg-green-500 hover:bg-green-600 transition"
         >
-          <p className="capitalize text-white text-sm">Subscribe</p>
+          <p className="capitalize text-white text-sm">Register</p>
         </Link>
       </div>
     </div>
