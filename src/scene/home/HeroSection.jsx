@@ -8,10 +8,10 @@ const HeroSection = () => {
     <>
       <div className="">
         <div className="mb-6">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-xl sm:text-4xl font-bold">
             Unlock your future with skills that matter
           </h1>
-          <p className="text-lg font-bold">
+          <p className="text-lg font-semibold sm:font-bold">
             National poverty Reduction with Growth Strategy
           </p>
           <motion.p

@@ -60,7 +60,7 @@ const SliderHome = () => {
             <img
               // src={`https://swiperjs.com/demos/images/nature-${i + 1}.jpg`}
               src={slide.img}
-              className="w-full h-[600px] object-cover rounded"
+              className="w-full h-[300px] sm:h-[600px] object-cover rounded"
               // alt={`slide ${i + 1}`}
               alt={`slide ${slide.id}`} 
             />
@@ -82,7 +82,7 @@ const SliderHome = () => {
             <img
               // src={`https://swiperjs.com/demos/images/nature-${i + 1}.jpg`}
               src={slide.img}
-              className="w-full h-[40px] object-cover rounded cursor-pointer"
+              className="w-full h-[30px] sm:h-[40px] object-cover rounded cursor-pointer"
               // alt={`Thumb ${i + 1}`}
               alt={slide.id}
             />

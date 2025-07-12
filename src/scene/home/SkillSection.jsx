@@ -1,26 +1,56 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import SkillsCard from "./SkillsCard";
 
 const trainingItems = [
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
-  ",sdljkxhj",
+  {
+    id: 1,
+    state: "Abuja",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Web Dev",
+    skill2: "Cyber Security",
+    skill3: "Solar Installation",
+  },
+  {
+    id: 2,
+    state: "Anambra",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Web Dev",
+    skill2: "Cyber Security",
+    skill3: "Cosmetology",
+  },
+  {
+    id: 3,
+    state: "Bauchi",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Web Dev",
+    skill2: "Cyber Security",
+    skill3: "Solar Installation",
+  },
+  {
+    id: 4,
+    state: "Delta",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Web Dev",
+    skill2: "Cyber Security",
+    skill3: "Solar Installation",
+  },
+  {
+    id: 5,
+    state: "Kebbi",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Web Dev",
+    skill2: "Cyber Security",
+    skill3: "Solar Installation",
+  },
+  {
+    id: 6,
+    state: "Ondo",
+    icon: <FaCheckCircle className="text-green-600 text-sm" />,
+    skill1: "Graphics Design",
+    skill2: "Beauty & Cosmetology",
+    skill3: "Solar Installation",
+  },
 ];
 
 const SkillSection = () => {
@@ -35,111 +65,19 @@ const SkillSection = () => {
             This initiative will reach all six geo-political zones, focusing on
             technical and vocational training:
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-3">
-            <ul>
-              <h1 className="text-lg font-extrabold">Abuja</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Web Dev</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Cyber Security</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Solar Installation</span>
-              </div>
-            </ul>
-            <ul>
-              <h1 className="text-lg font-extrabold">Kebbi</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Web Dev</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Cyber Security</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Cosmetology</span>
-              </div>
-            </ul>
-            <ul>
-              <h1 className="text-lg font-extrabold">Ondo</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Graphics Design</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">
-                  Beauty & Cosmetology  
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Solar Installation</span>
-              </div>
-            </ul>
-            <ul>
-              <h1 className="text-lg font-extrabold">Delta</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Graphics Design</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">
-                  Agr-packaging 
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Electrical work</span>
-              </div>
-            </ul>
-            <ul>
-              <h1 className="text-lg font-extrabold">Bauchi</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Graphics Design</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">
-                  Beauty & Cosmetology  
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Solar Installation</span>
-              </div>
-            </ul>
-            <ul>
-              <h1 className="text-lg font-extrabold">Anambra</h1>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Graphics Design</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">
-                  Beauty & Cosmetology  
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">Solar Installation</span>
-              </div>
-            </ul>
-            {/* {trainingItems.map((item, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <FaCheckCircle className="text-green-600 text-sm" />
-                <span className="text-sm">{item}</span>
-              </div>
-            ))} */}
+          <div 
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-3"
+          >
+            {trainingItems.map((items, i) => (
+              <SkillsCard
+              key={i}
+                state={items.state}
+                icon={items.icon}
+                skill1={items.skill1}
+                skill2={items.skill2}
+                skill3={items.skill3}
+              />
+            ))}
           </div>
         </div>
       </div>

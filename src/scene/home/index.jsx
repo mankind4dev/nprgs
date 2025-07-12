@@ -23,6 +23,11 @@ const Home = () => {
             <InvestSection />
           </div>
         </div>
+        <div className="bg-gray-50">
+          <div className="flex flex-col px-5 py-2">
+            <ChooseSection />
+          </div>
+        </div>
         <div className="bg-gray-200">
           <div className="flex flex-col px-5 py-2">
             <NewsUpdate />
