@@ -27,11 +27,11 @@ const SkillSection = () => {
   return (
     <>
       <div className="flex flex-col">
-        <h1 className="text-lg font-extrabold">
+        <h1 className="text-xl font-extrabold">
           Choose Your Learning Skill Path
         </h1>
         <div className="flex flex-col">
-          <h3 className="text-lg font-semibold mb-2">
+          <h3 className="text-lg font-semibold mb-2 w-full sm:w-2xl ">
             This initiative will reach all six geo-political zones, focusing on
             technical and vocational training:
           </h3>

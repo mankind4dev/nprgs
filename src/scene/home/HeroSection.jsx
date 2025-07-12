@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -7,14 +8,14 @@ const HeroSection = () => {
     <>
       <div className="">
         <div className="mb-6">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-4xl font-bold">
             Unlock your future with skills that matter
           </h1>
-          <p className="text-sm font-bold">
+          <p className="text-lg font-bold">
             National poverty Reduction with Growth Strategy
           </p>
           <motion.p
-            className="w-full sm:max-w-3/4 text-sm"
+            className="w-full sm:max-w-3/4 text-md"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -39,24 +40,26 @@ const HeroSection = () => {
             dolorem laudantium?
           </motion.p>
           <button
-            
             className="px-6 py-2 text-white bg-green-500 hover:bg-green-600 rounded-[8px] mt-2
               transition duration-75"
           >
-            <Link to="/sign-up" className=""> Apply Now</Link>
+            <Link to="/sign-up" className="">
+              {" "}
+              Apply Now
+            </Link>
           </button>
         </div>
         <div className="">
-          <h1>What is the NPRGS Initiative?</h1>
+          <h1 className="text-2xl">What is the NPRGS Initiative?</h1>
           <div className="flex space-x-1">
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="w-full md:w-3/5 space-y-3 order-2 md:order-1">
                 <motion.p
-                  className="text-sm text-gray-700"
+                  className="text-md text-gray-700"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.1 }}
                   variants={{
                     hidden: { opacity: 0, x: -50 },
                     visible: { opacity: 1, x: 0 },
@@ -68,11 +71,11 @@ const HeroSection = () => {
                   pariatur sunt! Fugit, quibusdam numquam.
                 </motion.p>
                 <motion.p
-                  className="text-sm text-gray-700"
+                  className="text-md text-gray-700"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.2 }}
                   variants={{
                     hidden: { opacity: 0, x: -50 },
                     visible: { opacity: 1, x: 0 },
@@ -84,11 +87,11 @@ const HeroSection = () => {
                   pariatur sunt! Fugit, quibusdam numquam.
                 </motion.p>
                 <motion.p
-                  className="text-sm text-gray-700"
+                  className="text-md text-gray-700"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.3 }}
                   variants={{
                     hidden: { opacity: 0, x: -50 },
                     visible: { opacity: 1, x: 0 },
@@ -116,16 +119,34 @@ const HeroSection = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.4 }}
                     variants={{
                       hidden: { opacity: 0, x: -50 },
                       visible: { opacity: 1, x: 0 },
                     }}
                   >
-                    <li>Expand tech training nationwide</li>
-                    <li>Empower youth with real-world skills</li>
-                    <li>Promote innovation and digital literacy</li>
-                    <li>cadvsfg</li>
+                    <div className="flex items-center space-x-2">
+                      <FaCheckCircle className="text-green-600 text-sm" />
+                      <span className="text-sm">
+                        Expand tech training nationwide
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <FaCheckCircle className="text-green-600 text-sm" />
+                      <span className="text-sm">
+                        Empower youth with real-world skills
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <FaCheckCircle className="text-green-600 text-sm" />
+                      <span className="text-sm">
+                        Promote innovation and digital literacy
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <FaCheckCircle className="text-green-600 text-sm" />
+                      <span className="text-sm">cadvsfg</span>
+                    </div>
                   </motion.ul>
                 </div>
               </div>

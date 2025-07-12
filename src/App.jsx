@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/sign-up" element={<SignUp />} />
         <Route exact path="/sign-in" element={<SignIn />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

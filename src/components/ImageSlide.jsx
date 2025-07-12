@@ -17,7 +17,7 @@ const images = [
 
 const ImageSlider = () => {
   return (
-    <div className="hidden md:flex md:w-[650px] h-[500px] overflow-hidden shadow-md">
+    <div className="hidden md:flex md:w-[650px] h-[620px] overflow-hidden shadow-md">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}

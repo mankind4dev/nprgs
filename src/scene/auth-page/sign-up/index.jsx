@@ -93,15 +93,14 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="flex flex-col  items-center justify-center h-screen md:min-h-screen  py-4">
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen px-2 md:px-4 py-8">
-          <div className="flex flex-col w-full md:w-[580px] h-auto sm:h-[500px] bg-white p-2 md:p-6 shadow-md rounded-md overflow-hidden sm:overflow-y-scroll">
+      <div className="flex flex-col items-center justify-center min-h-screen py-4 px-2 md:px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1280px]">
+         <div className="flex flex-col w-full md:w-[780px] bg-white p-2 pb-4 md:p-6 shadow-md rounded-md h-screen sm:h-[620px] overflow-y-scroll sm:overflow-y-auto">
             <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
               <div className="">
                 <div className="mb-1">
-                  <h1>Verify NIN</h1>
-                  <label className="block font-medium">Password</label>
+                  <label>Verify NIN</label>
                   <div className="flex items-center">
                     <input
                       type={showPass ? "text" : "password"}
@@ -121,7 +120,7 @@ const SignUp = () => {
                     </p>
                   )}
                 </div>
-                <div className="flex space-x-1 space-y-2">
+                <div className="flex flex-col sm:flex-row space-x-1 space-y-2">
                   <div className="flex flex-col w-full">
                     <label className="block font-medium">First Name</label>
                     <input
@@ -162,7 +161,7 @@ const SignUp = () => {
                     </p>
                   )}
                 </div>
-                <div className="flex space-x-1">
+                <div className="flex flex-col sm:flex-row space-x-1">
                   <div className="flex flex-col w-full">
                     <label className="block font-medium">Gender</label>
                     <input
@@ -205,7 +204,7 @@ const SignUp = () => {
                 </div>
               </div>
 
-              <div className="flex space-x-1">
+              <div className="flex flex-col sm:flex-row space-x-1">
                 <div className="flex flex-col w-full">
                   <label className="block font-medium">Email</label>
                   <input
@@ -252,7 +251,7 @@ const SignUp = () => {
 
               <div className="flex flex-col space-y-">
                 <h1 className="text-lg font-bold">Place of residence:</h1>
-                <div className="flex space-x-1 space-y-2">
+                <div className="flex flex-col sm:flex-row space-x-1 space-y-2">
                   <div className="flex flex-col w-full">
                     <label className="block font-medium">Street</label>
                     <input
@@ -280,7 +279,7 @@ const SignUp = () => {
                     )}
                   </div>
                 </div>
-                <div className="flex space-x-1">
+                <div className="flex flex-col sm:flex-row space-x-2">
                   <div className="flex flex-col w-full">
                     <label className="block font-medium">LGA</label>
                     <input
@@ -312,7 +311,7 @@ const SignUp = () => {
 
               <div className="flex flex-col space-y-">
                 <h1 className="text-lg font-bold">Education:</h1>
-                <div className="flex space-x-1 space-y-2">
+                <div className="flex flex-col sm:flex-row space-x-1 space-y-2">
                   <div>
                     <label className="block font-medium">Level</label>
                     <select
@@ -483,7 +482,7 @@ const SignUp = () => {
               <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
             )}
 
-            <div className="flex items-center space-x-2 mt-4">
+            <div className="flex items-center space-x-2 my-4">
               <p className="text-sm">Already have an account?</p>
               <Link
                 to="/sign-in"
